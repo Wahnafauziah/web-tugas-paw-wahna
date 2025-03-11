@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f8d7ff, #e1cfff, #d1e0ff);
+    color: #5e3c6d;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* GRID LAYOUT */
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    background: white;
+    color: #5e3c6d;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADER */
+.header {
+    grid-column: span 2;
+    text-align: center;
+    background: linear-gradient(135deg, #b784b7, #e1a3ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #5e3c6d;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header:hover {
+    transform: scale(1.05);
+}
+
+/* SIDEBAR */
+.Kontak {
+    background: linear-gradient(135deg, #f2e6ff, #d1e0ff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Kontak:hover {
+    transform: scale(1.05);
+}
+
+.Kontak img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 4px solid #e1a3ff;
+}
+
+.Kontak h2 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* KONTEN UTAMA */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content section {
+    background: linear-gradient(135deg, #f8d7ff, #e1cfff);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content section:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADING */
+h2 {
+    font-size: 20px;
+    color: #5e3c6d;
+    border-bottom: 2px solid #e1a3ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+    .header {
+        grid-column: span 1;
+    }
+    .sidebar {
+        text-align: center;
+    }
+    .content {
+        text-align: left;
+    }
+}
+/* Memberikan warna pada setiap bagian keterampilan */
+.accordion-item {
+    background: linear-gradient(135deg, #f8d7ff, #e1cfff);
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* Warna latar tombol keterampilan */
+.accordion-button {
+    background: linear-gradient(135deg, #f8d7ff, #e1cfff);
+    color: #5e3c6d;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.accordion-button:hover {
+    background: linear-gradient(135deg, #b784b7, #e1cfff);
+    color: white;
+}
+
+/* Warna tombol saat dibuka */
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #c89bff, #e1cfff);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #d1e0ff;
+    color: #5e3c6d;
+}
+
+/* Efek hover agar lebih interaktif */
+.accordion-button:hover {
+    background: #b784b7;
+    color: white;
+}
+
+.galeri-container {
+    grid-column: span 2;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto; /* Agar berada di tengah */
+    text-align: center;
+    background: linear-gradient(135deg, #f8d7ff, #e1cfff);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #5e3c6d;;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeri-container h2 {
+    color: #5e3c6d;
+    border-bottom: 2px solid #e1a3ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins";
+    margin: 0px;
+    padding: 0px
+}
+
+/* nanti di ubah warna pake apk bapaknya */
+.jumbotron{
+    background-color: #2C3930;
+    color: #DCD7C9;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+nav{
+    background-color: rgb(44, 57, 48, 0.1);
+    padding: 11px    
+}
+nav ul li{
+    display: inline;
+    margin-right: 11px;    
+}
+nav ul li a{
+    text-decoration: none;    
+    font-weight: bold;
+    color: rgb(63, 79, 68);
+    transition: padding 0.4s ease;
+}
+nav ul li a:hover{
+    background-color:rgb(63, 79, 68, 0.5);
+    padding: 0.80em;
+    border-radius: 8px;
+}
+
+.box-darkgreen{
+    background-color: #3F4F44;
+    p{color:#DCD7C9};
+    h1{color:#DCD7C9}
+    h2{color:#DCD7C9}
+    h4{color:#DCD7C9}
+    table{color:#DCD7C9}
+    text-align: justify;
+    margin: 22px;
+    padding: 16px;
+    border-radius: 20px;
+    border-style:inherit;
+    box-shadow: 12px 12px 2px 1px rgb(63, 79, 68, 0.5);
+    img{border-radius: 15px; width: 50%;}
+}
+.box-green{
+    background-color: rgb(63, 79, 68, 0.5);
+    p{color:#2C3930};
+    h1{color:#2C3930}
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border-style:inherit;
+    box-shadow: 12px 12px 2px 1px rgb(63, 79, 68);
+}
